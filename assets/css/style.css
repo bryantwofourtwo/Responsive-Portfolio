@@ -232,3 +232,70 @@ input[type=submit] {
 	background:#4aaaa5;
 }
 
+@media only screen and (max-width:960px) {
+	.container {
+		max-width: 768px;
+		padding: 0 20px;
+	}
+	#main-container {
+		padding-top: 130px;
+	}
+	.main-section {
+		max-width: 420px;
+	}
+	.work {
+		width: 100%;
+	}
+	.auth-image {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.main-section, .sidebar {
+		max-width: 100%;
+	}
+	#main-container {
+		overflow: auto;
+	}
+	.sidebar {
+		margin-bottom:40px;
+	}
+	.work {
+		margin-bottom: 10px;
+		width: 45%;
+	}
+	.work:nth-child(even) {
+		margin-right: 0;
+	}
+	.work:nth-child(odd) {
+		float: right;
+	}
+	.auth-image {
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#masthead {
+		margin-bottom: 20px;
+		position: static;
+	}
+	header.container {
+		padding: 0;
+	}
+	#logo, .work, .auth-image {
+		width: 100%;
+	}
+	nav {
+		margin: 15px 0;
+		width: 100%;
+		text-align: center;
+	}
+	nav a {
+		margin-left: 0;
+		padding-left: 0;
+		width: 30%;
+	}
+}
